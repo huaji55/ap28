@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>解鎖計算器</title>
+<style>
+  .level-row { display: flex; align-items: center; margin-bottom:10px; }
+  .level-label { width:50px; font-weight:bold; }
+  .item { width:100px; margin:2px; text-align:center; cursor:pointer; border:2px solid gray; padding:5px; }
+  .item.unlocked { border-color: green; background-color:#d4ffd4; }
+  .item.season { border-color: orange; }
+  img { width:50px; height:50px; }
+</style>
+</head>
+<body>
+<h2>解鎖計算器</h2>
+<p>目前經驗值：<span id="currentExp">0</span></p>
+<p>使用經驗物品 (+100)：<input type="number" id="expItems" min="0" value="0">
+<button onclick="useExpItems()">使用</button>
+<button onclick="resetAll()">重置全部</button></p>
+<div id="itemsContainer"></div>
+<div id="lvInfo"></div>
+
+<script>
+let items = []; // 待 import JSON
+let exp = 0;
+
+// 假設已 import JSON
+items = JSON.parse(`[
+  {"nm":"emote1","cst":0,"season":false,"level":1,"exp":"200","image":"https://sky-children-of-the-light.fandom.com/wiki/File:Sky-app-icon-2019-2.jpg"},
+  {"nm":"emote2","cst":0,"season":true,"level":2,"exp":"0","image":"https://sky-children-of-the-light.fandom.com/wiki/File:Sky-app-icon-2019-2.jpg"},
+  {"nm":"魔法","cst":2,"season":false,"level":1,"exp":"200","image":"https://sky-children-of-the-light.fandom.com/wiki/File:Sky-app-icon-2019-2.jpg"},
+  {"nm":"CharSkyKid_Body_AP28JellyShorts","cst":0,"season":true,"level":3,"exp":"0","image":"https://sky-children-of-the-light.fandom.com/wiki/File:Sky-app-icon-2019-2.jpg"},
+  {"nm":"emote3","cst":24,"season":false,"level":3,"exp":"400","image":"https://sky-children-of-the-light.fandom.com/wiki/File:Sky-app-icon-2019-2.jpg"},
+  {"nm":"emote4","cst":0,"season":true,"level":4,"exp":"0","image":"https://sky-children-of-the-light.fandom.com/wiki/File:Sky-app-icon-2019-2.jpg"},
+  {"nm":"青色","cst":9,"season":false,"level":3,"exp":"400","image":"https://sky-children-of-the-light.fandom.com/wiki/File:Sky-app-icon-2019-2.jpg"},
+  {"nm":"魔法","cst":0,"season":true,"level":4,"exp":"0","image":"https://sky-children-of-the-light.fandom.com/wiki/File:Sky-app-icon-2019-2.jpg"},
+  {"nm":"CharSkyKid_Hat_AP28HairBells","cst":36,"season":false,"level":4,"exp":"1000","image":"https://sky-children-of-the-light.fandom.com/wiki/File:Sky-app-icon-2019-2.jpg"},
+  {"nm":"先祖任務","cst":0,"season":false,"level":1,"exp":"0","image":"https://sky-children-of-the-light.fandom.com/wiki/File:Sky-app-icon-2019-2.jpg"},
+  {"nm":"魔法","cst":4,"season":false,"level":2,"exp":"600","image":"https://sky-children-of-the-light.fandom.com/wiki/File:Sky-app-icon-2019-2.jpg"},
+  {"nm":"heart","cst":3,"season":true,"level":5,"exp":"0","image":"https://sky-children-of-the-light.fandom.com/wiki/File:Sky-app-icon-2019-2.jpg"}
+]`);
+
+// 從 localStorage 讀取解鎖狀態
+if(localStorage.getItem('unlockedItems')){
+  const unlocked = JSON.parse(localStorage.getItem('unlockedItems'));
+  items.forEach(i=>i.unlocked = unlocked[i.nm] || false);
+}
+
+// 計算累積經驗需求
+function calculateCumulativeExpNeeded(){
+  const levelsExp = {};
+  for(let lv=2; lv<=5; lv++){
+    const prevItems = items.filter(i=>i.level < lv);
+    const cumExp = prevItems.reduce((sum,i)=>sum + (parseInt(i.exp)||0),0);
+    levelsExp[lv] = cumExp;
+  }
+  return levelsExp;
+}
+
+// 更新 UI
+function updateUnlockableItems(){
+  const container = document.getElementById('itemsContainer');
+  container.innerHTML = '';
+
+  const levelsExp = calculateCumulativeExpNeeded();
+
+  // 找最大可解鎖層
+  let maxLevel = 1;
+  for(let lv=2; lv<=5; lv++){
+    if(exp >= levelsExp[lv]) maxLevel = lv;
+    else break;
+  }
+
+  const grouped = {};
+  for(let lv=1; lv<=5; lv++) grouped[lv] = items.filter(i=>i.level===lv);
+
+  Object.keys(grouped).sort((a,b)=>b-a).forEach(level=>{
+    const row = document.createElement('div');
+    row.className='level-row';
+    const label = document.createElement('div');
+    label.className='level-label';
+    label.textContent = 'Lv.' + level;
+    row.appendChild(label);
+
+    grouped[level].forEach(item=>{
+      const div = document.createElement('div');
+      div.className='item';
+      if(item.unlocked) div.classList.add('unlocked');
+      if(item.season) div.classList.add('season');
+
+      const img = document.createElement('img'); img.src=item.image; div.appendChild(img);
+      const name = document.createElement('div'); name.textContent=item.nm; div.appendChild(name);
+
+      div.addEventListener('click', ()=>{
+        if(item.level <= maxLevel){
+          if(!item.unlocked){ exp += parseInt(item.exp)||0; item.unlocked=true; div.classList.add('unlocked'); }
+          else{ exp -= parseInt(item.exp)||0; if(exp<0) exp=0; item.unlocked=false; div.classList.remove('unlocked'); }
+          document.getElementById('currentExp').textContent = exp;
+          saveState();
+          updateUnlockableItems();
+        } else alert(`你還不能解鎖 Lv.${item.level}，先解鎖低層物品`);
+      });
+
+      row.appendChild(div);
+    });
+
+    container.appendChild(row);
+  });
+
+  // 每層經驗需求
+  let lvInfo = '';
+  for(let lv=2; lv<=5; lv++){
+    const needed = Math.max(0, levelsExp[lv]-exp);
+    const itemsNeeded = Math.ceil(needed/100);
+    lvInfo += `若要解鎖到 Lv.${lv}，還需要 ${needed} 經驗 約 ${itemsNeeded} 個「增加經驗物品」。<br>`;
+  }
+  document.getElementById('lvInfo').innerHTML = lvInfo;
+}
+
+// 使用經驗物品
+function useExpItems(){
+  const n = parseInt(document.getElementById('expItems').value)||0;
+  exp += n*100;
+  document.getElementById('currentExp').textContent = exp;
+  updateUnlockableItems();
+}
+
+// 重置
+function resetAll(){
+  if(confirm('確定重置全部解鎖嗎？')){
+    items.forEach(i=>i.unlocked=false);
+    exp=0;
+    document.getElementById('currentExp').textContent = exp;
+    saveState();
+    updateUnlockableItems();
+  }
+}
+
+// 保存解鎖狀態
+function saveState(){
+  const state = {};
+  items.forEach(i=>state[i.nm]=i.unlocked);
+  localStorage.setItem('unlockedItems', JSON.stringify(state));
+}
+
+// 初始化
+updateUnlockableItems();
+</script>
+</body>
+</html>
