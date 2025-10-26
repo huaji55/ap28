@@ -23,18 +23,18 @@
         "name": "遷徙鰩語者",
         "image": "https://static.wikia.nocookie.net/sky-children-of-the-light/images/5/55/Migrating-Manta-Whisperer-Spirit-cutout.png",
         "items": [
-        {"nm":"動作1","cst":0,"season":false,"level":1,"exp":"20","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/6/62/Migrating-Manta-Whisperer-emote-icon.png"},
+        {"nm":"1級動作","cst":0,"season":false,"level":1,"exp":"20","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/6/62/Migrating-Manta-Whisperer-emote-icon.png"},
         {"nm":"魔法","cst":2,"season":false,"level":1,"exp":"20","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/2/28/Special-event-spell-icon.png"},
         {"nm":"陪伴先祖","cst":0,"season":false,"level":1,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/3/35/Spirit-relationship-follow-icon.png"},
         {"nm":"髮型","cst":23,"season":false,"level":2,"exp":"30","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/a/a3/Migrating-Manta-Whisperer-Hair-icon.png"},
         {"nm":"魔法","cst":4,"season":false,"level":2,"exp":"30","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/2/28/Special-event-spell-icon.png"},
-        {"nm":"動作2","cst":0,"season":true,"level":2,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/6/62/Migrating-Manta-Whisperer-emote-icon.png"},
-        {"nm":"動作3","cst":24,"season":false,"level":3,"exp":"40","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/6/62/Migrating-Manta-Whisperer-emote-icon.png"},
+        {"nm":"2級動作","cst":0,"season":true,"level":2,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/6/62/Migrating-Manta-Whisperer-emote-icon.png"},
+        {"nm":"3級動作","cst":24,"season":false,"level":3,"exp":"40","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/6/62/Migrating-Manta-Whisperer-emote-icon.png"},
         {"nm":"魔法","cst":6,"season":false,"level":3,"exp":"40","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/2/28/Special-event-spell-icon.png"},
         {"nm":"斗篷","cst":0,"season":true,"level":3,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/7/70/Migrating-Manta-Whisperer-Cape-icon.png"},
         {"nm":"白色染料","cst":12,"season":false,"level":4,"exp":"100","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/6/64/White-dye-container-icon.png"},
         {"nm":"先祖任務","cst":0,"season":false,"level":4,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/2/26/Spirit-relationship-icon.png"},
-        {"nm":"動作4","cst":0,"season":true,"level":4,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/6/62/Migrating-Manta-Whisperer-emote-icon.png"},
+        {"nm":"4級動作","cst":0,"season":true,"level":4,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/6/62/Migrating-Manta-Whisperer-emote-icon.png"},
         {"nm":"服裝","cst":0,"season":true,"level":4,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/9/97/Migrating-Manta-Whisperer-Outfit-icon.png"},
         {"nm":"季心","cst":3,"season":true,"level":5,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/0/05/Season-of-Migration-Heart.png"}
             ]
@@ -43,17 +43,17 @@
       "name": "遷徙引蝶人",
       "image": "https://static.wikia.nocookie.net/sky-children-of-the-light/images/2/29/Migrating-Butterfly-Charmer-cutout.png",
       "items": [
-        {"nm":"動作1","cst":0,"season":false,"level":1,"exp":"20","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/b/bd/Migrating-Butterfly-Charmer-emote-icon.png"},
+        {"nm":"1級動作","cst":0,"season":false,"level":1,"exp":"20","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/b/bd/Migrating-Butterfly-Charmer-emote-icon.png"},
         {"nm":"魔法","cst":2,"season":false,"level":1,"exp":"20","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/2/28/Special-event-spell-icon.png"},
         {"nm":"陪伴先祖","cst":0,"season":false,"level":1,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/3/35/Spirit-relationship-follow-icon.png"},
         {"nm":"黃色染料","cst":6,"season":false,"level":2,"exp":"60","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/a/ad/Yellow-dye-container-icon.png"},
-        {"nm":"動作2","cst":0,"season":true,"level":2,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/b/bd/Migrating-Butterfly-Charmer-emote-icon.png"},
-        {"nm":"動作3","cst":24,"season":false,"level":3,"exp":"40","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/b/bd/Migrating-Butterfly-Charmer-emote-icon.png"},
+        {"nm":"2級動作","cst":0,"season":true,"level":2,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/b/bd/Migrating-Butterfly-Charmer-emote-icon.png"},
+        {"nm":"3級動作","cst":24,"season":false,"level":3,"exp":"40","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/b/bd/Migrating-Butterfly-Charmer-emote-icon.png"},
         {"nm":"斗篷","cst":30,"season":false,"level":3,"exp":"40","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/4/4d/Migrating-Butterfly-Charmer-Cape-icon.png"},
         {"nm":"魔法","cst":0,"season":true,"level":3,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/2/28/Special-event-spell-icon.png"},
         {"nm":"魔法","cst":8,"season":false,"level":4,"exp":"100","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/2/28/Special-event-spell-icon.png"},
         {"nm":"先祖任務","cst":0,"season":false,"level":4,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/2/26/Spirit-relationship-icon.png"},
-        {"nm":"動作4","cst":0,"season":true,"level":4,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/b/bd/Migrating-Butterfly-Charmer-emote-icon.png"},
+        {"nm":"4級動作","cst":0,"season":true,"level":4,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/b/bd/Migrating-Butterfly-Charmer-emote-icon.png"},
         {"nm":"頭飾","cst":0,"season":true,"level":4,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/b/b8/Migrating-Butterfly-Charmer-Hair-Accessory-icon.png"},
         {"nm":"季心","cst":3,"season":true,"level":5,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/0/05/Season-of-Migration-Heart.png"}
             ]
@@ -62,17 +62,17 @@
         "name": "遷徙鳥語者",
         "image": "https://static.wikia.nocookie.net/sky-children-of-the-light/images/8/8b/Migrating-Bird-Whisperer-cutout.png",
         "items": [
-        {"nm":"動作1","cst":0,"season":false,"level":1,"exp":"20","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/f/fb/Migrating-Bird-Whisperer-emote-icon.png"},
+        {"nm":"1級動作","cst":0,"season":false,"level":1,"exp":"20","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/f/fb/Migrating-Bird-Whisperer-emote-icon.png"},
         {"nm":"魔法","cst":2,"season":false,"level":1,"exp":"20","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/2/28/Special-event-spell-icon.png"},
         {"nm":"陪伴先祖","cst":0,"season":false,"level":1,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/3/35/Spirit-relationship-follow-icon.png"},
         {"nm":"魔法","cst":4,"season":false,"level":2,"exp":"60","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/2/28/Special-event-spell-icon.png"},
-        {"nm":"動作2","cst":0,"season":true,"level":2,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/f/fb/Migrating-Bird-Whisperer-emote-icon.png"},
-        {"nm":"動作3","cst":24,"season":false,"level":3,"exp":"40","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/f/fb/Migrating-Bird-Whisperer-emote-icon.png"},
+        {"nm":"2級動作","cst":0,"season":true,"level":2,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/f/fb/Migrating-Bird-Whisperer-emote-icon.png"},
+        {"nm":"3級動作","cst":24,"season":false,"level":3,"exp":"40","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/f/fb/Migrating-Bird-Whisperer-emote-icon.png"},
         {"nm":"服裝","cst":30,"season":false,"level":3,"exp":"40","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/7/78/Migrating-Bird-Whisperer-Outfit-icon.png"},
         {"nm":"魔法","cst":0,"season":true,"level":3,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/2/28/Special-event-spell-icon.png"},
         {"nm":"藍色染料","cst":12,"season":false,"level":4,"exp":"100","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/0/0b/Blue-dye-container-icon.png"},
         {"nm":"先祖任務","cst":0,"season":false,"level":4,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/2/26/Spirit-relationship-icon.png"},
-        {"nm":"動作4","cst":0,"season":true,"level":4,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/f/fb/Migrating-Bird-Whisperer-emote-icon.png"},
+        {"nm":"4級動作","cst":0,"season":true,"level":4,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/f/fb/Migrating-Bird-Whisperer-emote-icon.png"},
         {"nm":"斗篷","cst":0,"season":true,"level":4,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/6/68/Migrating-Bird-Whisperer-Cape-icon.png"},
         {"nm":"季心","cst":3,"season":true,"level":5,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/0/05/Season-of-Migration-Heart.png"}
             ]
@@ -81,57 +81,22 @@
       "name": "遷徙水母語者",
       "image": "https://static.wikia.nocookie.net/sky-children-of-the-light/images/a/a1/Migrating-Jelly-Whisperer-Spirit-cutout.png",
       "items": [
-        {"nm":"動作1","cst":0,"season":false,"level":1,"exp":"20","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/c/c4/Migrating-Jelly-Whisperer-emote-icon.png"},
+        {"nm":"1級動作","cst":0,"season":false,"level":1,"exp":"20","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/c/c4/Migrating-Jelly-Whisperer-emote-icon.png"},
         {"nm":"魔法","cst":2,"season":false,"level":1,"exp":"20","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/2/28/Special-event-spell-icon.png"},
         {"nm":"陪伴先祖","cst":0,"season":false,"level":1,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/3/35/Spirit-relationship-follow-icon.png"},
         {"nm":"魔法","cst":4,"season":false,"level":2,"exp":"60","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/2/28/Special-event-spell-icon.png"},
-        {"nm":"動作2","cst":0,"season":true,"level":2,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/c/c4/Migrating-Jelly-Whisperer-emote-icon.png"},
-        {"nm":"動作3","cst":24,"season":false,"level":3,"exp":"40","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/c/c4/Migrating-Jelly-Whisperer-emote-icon.png"},
+        {"nm":"2級動作","cst":0,"season":true,"level":2,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/c/c4/Migrating-Jelly-Whisperer-emote-icon.png"},
+        {"nm":"3級動作","cst":24,"season":false,"level":3,"exp":"40","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/c/c4/Migrating-Jelly-Whisperer-emote-icon.png"},
         {"nm":"青色染料","cst":9,"season":false,"level":3,"exp":"40","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/f/f5/Cyan-dye-container-icon.png"},
         {"nm":"服裝","cst":0,"season":true,"level":3,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/e/ed/Migrating-Jelly-Whisperer-Outfit-icon.png"},
         {"nm":"帽子","cst":36,"season":false,"level":4,"exp":"100","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/7/7c/Migrating-Jelly-Whisperer-Hairpiece-icon.png"},
         {"nm":"先祖任務","cst":0,"season":false,"level":4,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/2/26/Spirit-relationship-icon.png"},
-        {"nm":"動作4","cst":0,"season":true,"level":4,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/c/c4/Migrating-Jelly-Whisperer-emote-icon.png"},
+        {"nm":"4級動作","cst":0,"season":true,"level":4,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/c/c4/Migrating-Jelly-Whisperer-emote-icon.png"},
         {"nm":"魔法","cst":0,"season":true,"level":4,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/2/28/Special-event-spell-icon.png"},
         {"nm":"季心","cst":3,"season":true,"level":5,"exp":"0","image":"https://static.wikia.nocookie.net/sky-children-of-the-light/images/0/05/Season-of-Migration-Heart.png"}
             ]
     }
   },
-  "ap29": {
-    "spirit1": {
-      "name": "先祖1",
-      "image": "https://example.com/spirit1.png",
-      "items": [
-        {"nm":"動作2","cst":0,"season":false,"level":2,"exp":400,"image":"https://example.com/item4.png"}
-            ]
-    }, "spirit2": {
-      "name": "先祖2",
-      "image": "https://example.com/spirit2.png",
-      "items": [
-        {"nm":"動作2","cst":0,"season":false,"level":2,"exp":400,"image":"https://example.com/item4.png"},
-        {"nm":"魔法","cst":0,"season":true,"level":2,"exp":0,"image":"https://example.com/item5.png"}
-      ]
-    }, "spirit3": {
-        "name": "先祖2",
-        "image": "https://example.com/spirit2.png",
-        "items": [
-          {"nm":"動作2","cst":0,"season":false,"level":2,"exp":400,"image":"https://example.com/item4.png"},
-          {"nm":"魔法","cst":0,"season":true,"level":2,"exp":0,"image":"https://example.com/item5.png"}
-        ]
-      }, "spirit4": {
-        "name": "先祖2",
-        "image": "https://example.com/spirit2.png",
-        "items": [
-          {"nm":"動作2","cst":0,"season":false,"level":2,"exp":400,"image":"https://example.com/item4.png"},
-          {"nm":"魔法","cst":0,"season":true,"level":2,"exp":0,"image":"https://example.com/item5.png"}
-        ]
-      }, "spirit5": {
-        "name": "先祖2",
-        "image": "https://example.com/spirit2.png",
-        "items": [
-          {"nm":"動作2","cst":0,"season":false,"level":2,"exp":400,"image":"https://example.com/item4.png"},
-          {"nm":"魔法","cst":0,"season":true,"level":2,"exp":0,"image":"https://example.com/item5.png"}
-        ]
-      }
+  "season of test": {
   }
 }
