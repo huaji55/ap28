@@ -366,16 +366,16 @@ function updateUI(){
             label.textContent = 'Lv.' + level;
             levelRowWrapper.appendChild(label);
 
-            const ttGroups = {};
+            const LevelGroups = {};
             levelItems.forEach(item=>{
-                if(!ttGroups[item.tt]) ttGroups[item.tt]=[];
-                ttGroups[item.tt].push(item);
+                if(!LevelGroups[item.level]) LevelGroups[item.level]=[];
+                LevelGroups[item.level].push(item);
             });
 
-            Object.keys(ttGroups).sort((a,b)=>a-b).forEach(tt=>{
-                const itemsInTt = ttGroups[tt];
-                const nonSeason = itemsInTt.filter(i=>!i.season);
-                const season = itemsInTt.filter(i=>i.season);
+            Object.keys(ttGroups).sort((a,b)=>a-b).forEach(level=>{
+                const itemsInLevel = LevelGroups[level];
+                const nonSeason = itemsInLevel.filter(i=>!i.season);
+                const season = itemsInLebel.filter(i=>i.season);
                 const orderedItems = [...nonSeason, ...season];
 
                 for(let i=Math.floor((orderedItems.length-1)/ITEMS_PER_ROW)*ITEMS_PER_ROW; i>=0; i-=ITEMS_PER_ROW){
